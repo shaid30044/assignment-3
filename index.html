@@ -6,24 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
 
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
     <!-- Daisy UI -->
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Lato font -->
+    <!-- Poppins font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awesome -->
+
+    <script src="https://kit.fontawesome.com/1856f306ae.js" crossorigin="anonymous"></script>
+
+    <!-- styles -->
+
+    <style>
+        .font-noto {
+            font-family: 'Noto Sans', sans-serif;
+        }
+
+        .bg-color {
+            background-color: #F85559;
+        }
+
+        .text-title-color {
+            color: #121212;
+        }
+    </style>
 
 </head>
 
-<body>
+<body class="font-noto">
 
     <!-- header section -->
+
     <header>
 
+        <!-- nav section -->
+
+        <nav
+            class="mx-4 md:mx-12 lg:mx-40 mt-4 lg:mt-8 lg:flex lg:justify-between lg:items-center lg:px-12 lg:py-4 lg:bg-[#F85559] rounded-full">
+
+            <!-- small & medium device -->
+
+            <div class="flex justify-between items-center flex-row-reverse lg:hidden">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <i class="fa-solid fa-bars fa-lg"></i>
+                    </label>
+                    <ul tabindex="0"
+                        class="text-sm font-medium text-title-color space-y-2 text-right dropdown-content -ml-28 w-">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                        <li class="flex items-center">
+                            <input type="text" placeholder="Search here"
+                                class="input input-bordered rounded-full w-40 h-10" />
+                            <div class="-ml-8">
+                                <i class="fa-solid fa-magnifying-glass text-title-color"></i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a href="">
+                    <div class="flex items-center gap-1 md:gap-2">
+                        <img src="./images/logo.png" alt="" class="w-7 md:w-8 lg:w-10">
+                        <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-title-color lg:text-white">Fruit Burst
+                        </h1>
+                    </div>
+                </a>
+            </div>
+
+            <!-- large device -->
+
+            <div class="hidden lg:grid lg:grid-cols-3 lg:space-x-[76px]">
+                <div class="flex">
+                    <ul class="flex items-center gap-6 font-medium text-white">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./images/logo.png" alt="" class="w-7 md:w-8 lg:w-10">
+                    <a href="">
+                        <h1 class="text-xl md:text-2xl lg:text-4xl font-bold text-title-color lg:text-white">Fruit Burst
+                        </h1>
+                    </a>
+                </div>
+                <div class="hidden lg:flex lg:items-center">
+                    <input type="text" placeholder="Search here" class="lg:w-80 lg:px-6 lg:py-3 rounded-full" />
+                    <i class="fa-solid fa-magnifying-glass fa-lg text-title-color -ml-12"></i>
+                </div>
+            </div>
+        </nav>
     </header>
 </body>
 
