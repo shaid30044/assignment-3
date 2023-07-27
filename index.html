@@ -94,14 +94,14 @@
                         <i class="fa-solid fa-bars fa-lg"></i>
                     </label>
                     <ul tabindex="0"
-                        class="text-sm font-medium font-title-color space-y-2 text-right dropdown-content -ml-28">
+                        class="text-xs font-medium font-title-color space-y-2 text-right dropdown-content -ml-28">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
                         <li class="flex items-center">
                             <input type="text" placeholder="Search here"
-                                class="input input-bordered rounded-full w-40 h-10" />
+                                class="input input-bordered text-xs rounded-full w-40 h-10" />
                             <div class="-ml-8">
                                 <i class="fa-solid fa-magnifying-glass text-title-color"></i>
                             </div>
@@ -153,7 +153,7 @@
 
         <section class="relative">
 
-            <div class="carousel w-full mt-6 lg:mt-12">
+            <div class="carousel w-full mt-40 lg:mt-12">
 
                 <!-- carousel 1 -->
 
@@ -235,29 +235,32 @@
 
                 <!-- carousel 4 -->
 
-                <div id="slide4" class="carousel-item relative bg-img-4 w-full bg-contain bg-no-repeat rounded-xl">
-                    <div><img src="./images/banner4.png" alt=""></div>
-                    <!-- <img src="./images/banner4.png" class="w-full" /> -->
-                    <div class="m-auto absolute top-14 right-0 left-0 text-center">
-                        <h1 class="text-xl md:text-5xl lg:text-7xl font-extrabold text-white">
-                            Exotic tastes at your
-                            <br>
-                            doorstep
-                        </h1>
-                        <p
-                            class="text-xs md:text-base lg:text-xl font-medium text-white md:pt-3 lg:pt-6 pb-3 md:pb-6 lg:pb-8">
-                            We supply highly quality organic products
-                        </p>
-                        <button
-                            class="text-sm lg:text-xl font-extrabold text-white bg-color px-3 py-2 lg:px-6 lg:py-4 mx-auto rounded-lg lg:rounded-xl cursor-pointer hover:text-[#121212]">Shop
-                            Now
-                        </button>
+                <div id="slide4" class="carousel-item relative w-full bg-contain rounded-2xl">
+                    <div>
+                        <img src="./images/banner4.png" alt="" class="rounded-xl">
                     </div>
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle bg-[#121212] border-none"><img
-                                src="./images/left-angle.png" alt=""></a>
-                        <a href="#slide1" class="btn btn-circle bg-[#121212] border-none"><img
-                                src="./images/right-angle.png" alt=""></a>
+                    <div class="absolute inset-0 bg-gradient-to-b from-[#121212] to-[#12121200] rounded-xl">
+                        <div class="m-auto absolute top-6 md:top-12 lg:top-14 right-0 left-0 text-center">
+                            <h1 class="text-xl md:text-5xl lg:text-7xl font-extrabold text-white">
+                                Exotic tastes at your
+                                <br>
+                                doorstep
+                            </h1>
+                            <p
+                                class="text-xs md:text-base lg:text-xl font-medium text-white md:pt-3 lg:pt-6 pb-3 md:pb-6 lg:pb-8">
+                                We supply highly quality organic products
+                            </p>
+                            <button
+                                class="text-sm lg:text-xl font-extrabold text-white bg-color px-3 py-2 lg:px-6 lg:py-4 mx-auto rounded-lg lg:rounded-xl cursor-pointer hover:text-[#121212]">Shop
+                                Now
+                            </button>
+                        </div>
+                        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                            <a href="#slide3" class="btn btn-circle bg-[#121212] border-none"><img
+                                    src="./images/left-angle.png" alt=""></a>
+                            <a href="#slide1" class="btn btn-circle bg-[#121212] border-none"><img
+                                    src="./images/right-angle.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
 
@@ -330,6 +333,8 @@
 
             <!-- cards -->
 
+            <!-- card 1 -->
+
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-6">
                 <div class="card border-[1px] border-[#222A] py-10">
                     <figure>
@@ -367,6 +372,9 @@
                         </dialog>
                     </div>
                 </div>
+
+                <!-- card 2 -->
+
                 <div class="card border-[1px] border-[#222A] py-10">
                     <figure>
                         <img src="./images/fruit7.png" alt="" class="rounded-xl h-28" />
@@ -403,9 +411,12 @@
                         </dialog>
                     </div>
                 </div>
+
+                <!-- card 3 -->
+
                 <div class="card border-[1px] border-[#222A] py-10">
                     <figure>
-                        <img src="/images/fruit8.png" alt="" class="rounded-xl h-28" />
+                        <img src="./images/fruit8.png" alt="" class="rounded-xl h-28" />
                     </figure>
                     <div class="flex flex-col justify-center items-center text-center">
                         <h2 class="text-2xl font-bold font-title-color pt-8 pb-6 px-8 border-b-2 border-[#222A]">
@@ -420,7 +431,7 @@
                             <form method="dialog" class="modal-box">
                                 <div>
                                     <figure>
-                                        <img src="/images/fruit8.png" alt="" class="rounded-xl h-28" />
+                                        <img src="./images/fruit8.png" alt="" class="rounded-xl h-28" />
                                     </figure>
                                     <div class="flex flex-col justify-center items-center text-center">
                                         <h2 class="text-2xl font-bold font-title-color py-6">Red Dragon</h2>
@@ -439,9 +450,12 @@
                         </dialog>
                     </div>
                 </div>
+
+                <!-- card 4 -->
+
                 <div class="card border-[1px] border-[#222A] py-10">
                     <figure>
-                        <img src="/images/fruit9.png" alt="" class="rounded-xl h-28" />
+                        <img src="./images/fruit9.png" alt="" class="rounded-xl h-28" />
                     </figure>
                     <div class="flex flex-col justify-center items-center text-center">
                         <h2 class="text-2xl font-bold font-title-color pt-8 pb-6 px-8 border-b-2 border-[#222A]">
@@ -456,7 +470,7 @@
                             <form method="dialog" class="modal-box">
                                 <div>
                                     <figure>
-                                        <img src="/images/fruit9.png" alt="" class="rounded-xl h-28" />
+                                        <img src="./images/fruit9.png" alt="" class="rounded-xl h-28" />
                                     </figure>
                                     <div class="flex flex-col justify-center items-center text-center">
                                         <h2 class="text-2xl font-bold font-title-color py-6">Banana</h2>
@@ -669,19 +683,21 @@
         <div class="flex items-center gap-2">
             <img src="./images/logo.png" alt="" class="w-10">
             <a href="">
-                <h1
-                    class="text-4xl font-bold text-white hover:text-[#F85559]">
+                <h1 class="text-4xl font-bold text-white hover:text-[#F85559]">
                     Fruit Burst
                 </h1>
             </a>
         </div>
-        <ul class="grid grid-cols-4 md:grid-cols-6 text-center text-sm lg:text-lg font-semibold gap-6 lg:gap-10 text-white pt-8 lg:pt-12 pb-12 lg:pb-16">
+        <ul
+            class="grid grid-cols-4 md:grid-cols-6 text-center text-sm lg:text-lg font-semibold gap-6 lg:gap-10 text-white pt-8 lg:pt-12 pb-12 lg:pb-16">
             <li class="hover:text-[#F85559]"><a href="">Home</a></li>
             <li class="hover:text-[#F85559]"><a href="">About Us</a></li>
             <li class="hover:text-[#F85559]"><a href="">Shop</a></li>
             <li class="hover:text-[#F85559]"><a href="">All Fruits</a></li>
-            <li class="col-span-2 md:col-span-1 text-right md:text-center hover:text-[#F85559]"><a href="">Support</a></li>
-            <li class="col-span-2 md:col-span-1 text-left md:text-center hover:text-[#F85559]"><a href="">My Account</a></li>
+            <li class="col-span-2 md:col-span-1 text-right md:text-center hover:text-[#F85559]"><a href="">Support</a>
+            </li>
+            <li class="col-span-2 md:col-span-1 text-left md:text-center hover:text-[#F85559]"><a href="">My Account</a>
+            </li>
         </ul>
         <div class="flex gap-6 md:gap-10">
             <a href=""><img src="./images/twitter.png" alt="" class="h-6 lg:h-8"></a>
