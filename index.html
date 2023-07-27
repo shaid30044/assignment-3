@@ -66,12 +66,6 @@
                 linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),
                 url("./images/banner3.png");
         }
-
-        .bg-img-4 {
-            background-image:
-                linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%),
-                url("./images/banner4.png");
-        }
     </style>
 
 </head>
@@ -88,20 +82,20 @@
 
             <!-- small & medium device -->
 
-            <div class="flex justify-between items-center flex-row-reverse lg:hidden">
+            <div class="flex justify-between items-center flex-row-reverse hover:mb-8 lg:hidden">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost">
                         <i class="fa-solid fa-bars fa-lg"></i>
                     </label>
                     <ul tabindex="0"
-                        class="text-xs font-medium font-title-color space-y-2 text-right dropdown-content -ml-28">
+                        class="grid grid-cols-4 justify- gap-3 items-center text-xs font-medium font-title-color text-center dropdown-content w-80 -ml-80">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
                         <li><a>All Fruits</a></li>
-                        <li class="flex items-center">
+                        <li class="flex col-span-4 justify-center text-center items-center">
                             <input type="text" placeholder="Search here"
-                                class="input input-bordered text-xs rounded-full w-40 h-10" />
+                                class="input input-bordered text-xs rounded-full h-8" />
                             <div class="-ml-8">
                                 <i class="fa-solid fa-magnifying-glass text-title-color"></i>
                             </div>
@@ -153,7 +147,7 @@
 
         <section class="relative">
 
-            <div class="carousel w-full mt-40 lg:mt-12">
+            <div class="carousel w-full mt-10 lg:mt-12">
 
                 <!-- carousel 1 -->
 
@@ -333,9 +327,10 @@
 
             <!-- cards -->
 
-            <!-- card 1 -->
-
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-6">
+
+                <!-- card 1 -->
+
                 <div class="card border-[1px] border-[#222A] py-10">
                     <figure>
                         <img src="./images/fruit6.png" alt="" class="rounded-xl h-28" />
@@ -501,7 +496,7 @@
 
         <!-- meet section -->
 
-        <section class="bg-img-11 bg-cover bg-no-repeat rounded-xl py-8 md:py-12 lg:py-16 mb-16 lg:mb-32 text-center">
+        <section class="bg-img-11 bg-cover bg-no-repeat rounded-xl py-16 mb-16 lg:mb-32 text-center">
             <h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white">Meet the team section</h1>
             <p
                 class="text-sm lg:text-base font-medium text-white pt-4 pb-20 md:pt-6 lg:pb-16 w-80 md:w-[600px] lg:w-[700px] mx-auto">
@@ -700,12 +695,12 @@
             </li>
         </ul>
         <div class="flex gap-6 md:gap-10">
-            <a href=""><img src="./images/twitter.png" alt="" class="h-6 lg:h-8"></a>
-            <a href=""><img src="./images/facebook.png" alt="" class="h-6 lg:h-8"></a>
-            <a href=""><img src="./images/youtube.png" alt="" class="h-6 lg:h-8"></a>
-            <a href=""><img src="./images/linkedin.png" alt="" class="h-6 lg:h-8"></a>
-            <a href=""><img src="./images/instagram.png" alt="" class="h-6 lg:h-8"></a>
-            <a href=""><img src="./images/apple.png" alt="" class="h-6 lg:h-8"></a>
+            <a href=""><i class="fa-brands fa-twitter fa-xl text-white"></i></a>
+            <a href=""><i class="fa-brands fa-facebook fa-xl text-white"></i></a>
+            <a href=""><i class="fa-brands fa-youtube fa-xl text-white"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in fa-xl text-white"></i></a>
+            <a href=""><i class="fa-brands fa-instagram fa-xl text-white"></i></a>
+            <a href=""><i class="fa-brands fa-apple fa-xl text-white"></i></a>
         </div>
     </footer>
 </body>
